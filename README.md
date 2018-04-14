@@ -11,7 +11,7 @@ Running netdiscover shows us the IP of the VM to be 192.168.56.102 provisioned o
 
 ## nmap
 
-Nmap identifies some intesting ports.
+Nmap identifies some interesting ports.
 
 ![Alt text](./nmap.png?raw=true)
 
@@ -94,4 +94,4 @@ cat flag.txt
 
 ## thanks!
 
-Shout out to abatchy for the VM.
+Shout out to abatchy17 for the VM.
