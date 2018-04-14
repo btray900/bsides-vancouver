@@ -69,7 +69,7 @@ Brute force on anne with rockyou cracks the anne password.
 
 ## sudo
 
-Login as anne, sudo -l shows a sudo -i gives us root.
+Login as anne, sudo -l shows us we get mad root.
 
 ![Alt text](./anne-sudo.png?raw=true)
 
