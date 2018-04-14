@@ -43,7 +43,35 @@ Using rockyou on 'john' cracks the wordpress login.
 
 ## Low privilege shell
 
+I install a Wordpress PHP code then visit the site for a low priv shell in the msf multi/handler.
 
+![Alt text](./plugin.png?raw=true)
+
+![Alt text](./apache-shell.png?raw=true)
+
+
+## Enumeration
+
+So this is where you can find the FTP user list if you didn't find it enumerating, but /etc/passwd of course works. Also the wp-config.php has a password, and the password for john was known. None of these worked for any users. Brute forcing shows that most users use SSH keys, except anne.
+
+![Alt text](./hydra.png?raw=true)
+
+![Alt text](./anne-test.png?raw=true)
+
+
+
+## hydra
+
+Brute force on anne with rockyou cracks the anne password.
+
+![Alt text](./anne-cracked.png?raw=true)
+
+
+## sudo
+
+Login as anne, sudo -l shows a sudo -i gives us root.
+
+![Alt text](./anne-sudo.png?raw=true)
 
 
 ## root
@@ -53,3 +81,17 @@ Using rockyou on 'john' cracks the wordpress login.
   ( (>
   /  \
   </pre></html>
+  
+![Alt text](./root.png?raw=true)
+
+
+## flag
+
+cat flag.txt
+
+![Alt text](./flag.png?raw=true)
+
+
+## thanks!
+
+Shout out to abatchy for the VM.
